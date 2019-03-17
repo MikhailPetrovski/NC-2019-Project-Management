@@ -1,4 +1,4 @@
-package name;
+package com.netcracker.edu.name;
 
 
 import org.springframework.boot.SpringApplication;
