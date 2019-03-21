@@ -1,0 +1,115 @@
+.navbar-global {
+  background-color: #FFD700;
+}
+.navbar-primary {
+  background-color: #333;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  top: 51px;
+  width: 200px;
+  z-index: 8;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.navbar-primary.collapsed {
+  width: 70px;
+}
+
+.navbar-primary.collapsed .nav-label {
+  display: none;
+}
+
+.btn-expand-collapse {
+  position: absolute;
+  display: block;
+  left: 0px;
+  bottom:0;
+  width: 100%;
+  padding: 8px 0;
+  border-top:solid 1px #666;
+  color: grey;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn-expand-collapse:hover,
+.btn-expand-collapse:focus {
+  background-color: #FFD700;
+  color: white;
+}
+
+.btn-expand-collapse:active {
+  background-color: #FFD700;
+}
+
+.navbar-primary-menu,
+.navbar-primary-menu li {
+  margin:0; padding:0;
+  list-style: none;
+}
+
+.navbar-primary-menu li a {
+  display: block;
+  padding: 10px 18px;
+  text-align: left;
+  border-bottom:solid 1px #FFD700;
+  color: #ccc;
+}
+
+.navbar-primary-menu li a:hover {
+  background-color: #FFD700;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-primary-menu li a .glyphicon {
+  margin-right: 6px;
+}
+
+.navbar-primary-menu li a:hover .glyphicon {
+  color: orchid;
+}
+
+.main-content {
+  margin-top: 60px;
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.collapsed + .main-content {
+  margin-left:90px;
+}
+
+.navbar-header{
+
+  font-size: 130%;
+
+}
+.conteiner{
+  margin: -50px auto auto auto;
+}
+.btn btn-outline-success{
+  color:#808080;
+}
+th,tr{
+  weidth:10px;
+  height:60px;
+}
+.btn-incomplete{
+  margin:auto 30px 5px 2px;
+  display: inline-block;
+  color: white;
+  padding: 3px 40px;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+
+}
