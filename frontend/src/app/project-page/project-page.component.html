@@ -1,120 +1,277 @@
 <nav class="navbar navbar-inverse navbar-global navbar-fixed-top">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <p>Project management</p>>
-    </div>
-    <ul class="ss">
-      <li><button class="btn-3">Edit</button></li>
-      <li><button class="btn-3">Assigne</button>
-       <!-- <ul>
-          <li><a href="#">Услуга 1</a></li>
-          <li><a href="#">Длинная услуга 2</a></li>
-          <li><a href="#">Услуга 3</a></li>
-        </ul>-->
-      </li>
-      <li><button class="btn-3"> Start</button></li>
-      <li><button class="btn-3">Resolve</button></li>
-      <li><button class="btn-3">Ready for test</button></li>
-      <li><button class="btn-3">ReOpen</button></li>
-      <li><button class="btn-3">Close</button></li>
-    </ul>
+    <form class="form-inline my-2 my-lg-0" style="margin:10px 30px 1px 1150px;">
+      <input type="text" class="form-control " placeholder="Search" aria-label="Search">
+
+    </form>
   </div>
+
+
 </nav>
+
 <nav class="navbar-primary">
 
   <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left"></span></a>
   <ul class="navbar-primary-menu">
     <li>
-      <a href="#"><span class="glyphicon glyphicon-list-alt"></span><span class="nav-label">All PROJECTS </span></a>
+      <a href="../home"><span class="glyphicon glyphicon-list-alt"></span><span class="nav-label">All PROJECTS </span></a>
+    </li>
 
-      <a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="nav-label">MY TASK</span></a>
+    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="nav-label">MY TASK</span></a></li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">CREATE <b class="caret"></b></a>
+      <ul class="dropdown-menu  dropdown-menu-right">
+        <li><a href="#" data-toggle="modal" data-target="#proj">Project</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#task">Task</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">USERS<b class="caret"></b></a>
+      <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#">All users</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#user">New users</a></li>
+      </ul>
     </li>
   </ul>
 </nav>
 
-<div id="logo">
-  <h1><a href="index.html">Project</a></h1>
+<div class="modal fade" id="user" tabindex="-1" role="dialog" aria-labelledby="user" aria-hidden="true">
 
-</div>
-<div class="cont">
-  <div class="row">
-    <div class=" col">
-<p class="priorite">
-  <label > Priority: </label>
-  <input type="text" name="priority">
-</p>
-
-<p class="status">
-  <label > Status:</label>
-  <input type="text" name="status">
-</p>
-
-<p class="assigne">
-  <label > Assigne:</label>
-  <input type="text" name="assigne">
-</p>
-      <div class="ml-4  col" >
-<p class="reporter">
-  <label > Reporter:</label>
-  <input type="text" name="reporter">
-</p>
-
-<p class="estimation">
-  <label > Estimation:</label>
-  <input type="text" name="estimation">
-</p>
-
-<p class="assigne">
-  <label > Assigne</label>
-  <input type="text" name="assigne">
-</p>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">CREATE NEW USER</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div class=" col" >
-<p class="created">
-  <label > Created:</label>
-  <input type="text" name="created">
-</p>
+      <div class="modal-body">
+        <form>
+          <div class="clearfix">
+            <label for="personal-text" style="float: left;"> Personal Data </label>
+            <textarea class="form-control" id="personal-text"></textarea>
+          </div>
+          <div class="form-froup ">
+            <label class="col-form-label">User role:</label>
+            <select>
+              <option>Project manager</option>
+              <option>Developer</option>
+              <option>Tester</option>
+            </select>
+          </div>
+        </form>
 
-<p class="updated">
-  <label > Updated:</label>
-  <input type="text" name="updated">
-</p>
-
-<p class="resolved">
-  <label > Resolved:</label>
-  <input type="text" name="resolved">
-</p>
-
-<p class="closed">
-  <label > Closed:</label>
-  <input type="text" name="closed">
-</p>
       </div>
-</div>
+
+    </div>
   </div>
 </div>
-<div class="conteiner">
-  <div class="row">
-    <div class="sr-4 col">
 
-<div class="clearfix">
-  <label for="description-text" style="float: left;"> Description </label>
-  <textarea class="form-control" id="description-text"></textarea>
-</div>
-      <div class=" col-2">
-<div class="clearfix">
-  <label for="attachments-text" style="float: left;"> Attachments </label>
-  <textarea class="form-control" id="attachments-text"></textarea>
-</div>
+<div class="modal fade" id="proj" tabindex="-1" role="dialog" aria-labelledby="proj" aria-hidden="true">
+
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Create Project</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-        <div class=" col-2">
-<div class="clearfix">
-  <label for="comments-text" style="float: left;">Comments </label>
-  <textarea class="form-control" id="comments-text"></textarea>
+      <div class="modal-body">
+        <form>
+          <div class="clearfix">
+            <label for="idCode"> Code id </label>
+            <p><input type="text" name="idCode" id="idCode"></p>
+          </div>
+          <div class="form-froup ">
+            <label class="col-form-label">Summary</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
 
-  <p><button> Add comment</button>
+      </div>
+
+    </div>
+  </div>
+
 </div>
-        </div>
+
+<div class="modal fade" id="task" tabindex="-1" role="dialog" aria-labelledby="task" aria-hidden="true">
+
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Task</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row">
+            <div class="col">
+              <div class="clearfix">
+
+                <label for="idCode"> Project Code</label>
+                <p><input type="text" name="idCode" id="id"></p>
+              </div>
+            </div>
+            <div class="col" >
+              <div class="form-froup ">
+                <label class="col-form-label">Priority:</label>
+                <select>
+                  <option>blocker</option>
+                  <option>critical</option>
+                  <option>major</option>
+                  <option>normal</option>
+                  <option>minor</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="form-froup ">
+                <label for="discription" class="col-form-label">Description</label>
+                <textarea class="form-control" id="discription"></textarea>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="row">
+            <div class="col">
+              <div class="clearfix">
+                <label for="dueData"> Due Data</label>
+                <p><input type="text" name="dueData" id="dueData"></p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="clearfix">
+                <label for="estimation">Estimation</label>
+                <p><input type="text" name="estimation" id="estimation"></p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="clearfix">
+                <label for="assigne">Assignee</label>
+                <p><input type="text" name="assigne" id="assigne"></p>
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<div class="row" id="edit">
+<div class="col-3"></div>
+<div class="col">
+  <button type="button" class="btn btn-dark">Edit</button>
+  <button type="button" class="btn btn-dark">Assigne</button>
+  <button type="button" class="btn btn-dark">Start</button>
+  <button type="button" class="btn btn-dark">Resolve</button>
+  <button type="button" class="btn btn-dark">Ready for test</button>
+  <button type="button" class="btn btn-dark">ReOpen</button>
+  <button type="button" class="btn btn-dark">Close</button>
+ </div>
+</div>
+<div class="cont">
+  <div class="row " id="up">
+    <div class="col-3"></div>
+
+    <div class=" col-4">
+      <p class="priorite">
+        <label> Priority: </label>
+        <input type="text" name="priority">
+      </p>
+      <p class="status">
+        <label> Status:</label>
+        <input type="text" name="status">
+      </p>
+    </div>
+    <div class="col-1" ></div>
+    <div class="col-4">
+
+
+      <label> Assignee:</label>
+      <input type="text" name="assigne">
+
+
+
+      <label> Reporter:</label>
+      <input type="text" name="reporter">
+
+
+
+      <label> Estimation:</label>
+      <input type="text" name="estimation">
+
+
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-3">
+
+      <div class="clearfix">
+        <label for="description-text" style="float: left;"> Description </label>
+        <textarea class="form-control" id="description-text"></textarea>
+      </div>
+    </div>
+    <div class="col-2"></div>
+    <div class=" col">
+      <p class="created">
+        <label> Created:</label>
+        <input type="text" name="created">
+      </p>
+
+      <p class="updated">
+        <label> Updated:</label>
+        <input type="text" name="updated">
+      </p>
+
+      <p class="resolved">
+        <label> Resolved:</label>
+        <input type="text" name="resolved">
+      </p>
+
+      <p class="closed">
+        <label> Closed:</label>
+        <input type="text" name="closed">
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="conteiner">
+  <div class="row" id="attach">
+    <div class="col-3"></div>
+    <div class=" col-8">
+      <div class="clearfix">
+        <label for="attachments-text" style="float: left;"> Attachments </label>
+        <textarea class="form-control" id="attachments-text"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3"></div>
+    <div class=" col-5">
+      <div class="clearfix">
+        <label for="comments-text" style="float: left;">Comments </label>
+        <textarea class="form-control" id="comments-text"></textarea>
+
+        <p>
+          <button> Add comment</button>
+      </div>
     </div>
   </div>
 </div>

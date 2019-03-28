@@ -1,13 +1,28 @@
+th,tr{
+  weidth:10px;
+  height:60px;
+}
+.dropdown-menu{
+  background-color: #333;
+  padding:auto 300px;
+}
+
+
 .navbar-global {
   background-color: #FFD700;
+  height: 70px;
 }
+.form-control {
+  padding: 10px 50px;
+}
+
 .navbar-primary {
   background-color: #333;
-  bottom: 0px;
+  bottom: -40px;
   left: 0px;
   position: absolute;
-  top: 51px;
-  width: 200px;
+  top: 70px;
+  width: 300px;
   z-index: 8;
   overflow: hidden;
   -webkit-transition: all 0.1s ease-in-out;
@@ -73,28 +88,10 @@
 .navbar-primary-menu li a:hover .glyphicon {
   color: orchid;
 }
-
-.main-content {
-  margin-top: 60px;
-  margin-left: 200px;
-  padding: 20px;
+#user{
+  margin-left: -220px;
 }
 
-.collapsed + .main-content {
-  margin-left:90px;
-}
-
-.navbar-header{
-
-  font-size: 130%;
-
-}
-.conteiner{
-  margin: -50px auto auto auto;
-}
-.btn btn-outline-success{
-  color:#808080;
-}
 th,tr{
   weidth:10px;
   height:60px;
